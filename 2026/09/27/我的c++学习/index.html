@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>我的c++学习 - 不敢多嘴的小窝</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Fechin,"> 
+    <meta name="description" content="这是我的c++学习过程，由于这几天军训，留给我学习的时间很紧凑，就先说一下对于#include &amp;lt;stdio.h&amp;gt;的理解吧。我一开始以为这就是一个固定公式化的东西，没有什么特殊含义，但是,"> 
+    <meta name="author" content="928324gyh"> 
+    <link rel="alternative" href="atom.xml" title="不敢多嘴的小窝" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    
+    
+    
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="我的c++学习 - 不敢多嘴的小窝"/>
+    <meta name="twitter:description" content="这是我的c++学习过程，由于这几天军训，留给我学习的时间很紧凑，就先说一下对于#include &amp;lt;stdio.h&amp;gt;的理解吧。我一开始以为这就是一个固定公式化的东西，没有什么特殊含义，但是,"/>
+    
+    
+    
+    
+    <meta property="og:site_name" content="不敢多嘴的小窝"/>
+    <meta property="og:type" content="object"/>
+    <meta property="og:title" content="我的c++学习 - 不敢多嘴的小窝"/>
+    <meta property="og:description" content="这是我的c++学习过程，由于这几天军训，留给我学习的时间很紧凑，就先说一下对于#include &amp;lt;stdio.h&amp;gt;的理解吧。我一开始以为这就是一个固定公式化的东西，没有什么特殊含义，但是,"/>
+    
+<link rel="stylesheet" href="/css/diaspora.css">
+
+    <script>window.searchDbPath = "/search.xml";</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+<meta name="generator" content="Hexo 8.1.2"></head>
+
+<body class="loading">
+    <span id="config-title" style="display:none">不敢多嘴的小窝</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="https://928324gyh.github.io"></a>
+    <div title="播放/暂停" class="iconfont icon-play"></div>
+    <h3 class="subtitle">我的c++学习</h3>
+    <div class="social">
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">我的c++学习</h1>
+        <div class="stuff">
+            <span>九月 27, 2026</span>
+            
+
+        </div>
+        <div class="content markdown">
+            <p>这是我的c++学习过程，由于这几天军训，留给我学习的时间很紧凑，就先说一下对于#include &lt;stdio.h&gt;的理解吧。<br>我一开始以为这就是一个固定公式化的东西，没有什么特殊含义，但是当我更深入了解c++一点以后，我发现并不是的，我就开始搜索它的含义，发现它其实就是告诉编译器把输入输出的头文件拿过来用，他的里面本来就放好了很多函数声明。<br>比如printf（）是打印后方括号内的进行输出。<br>而scanf（）是给量赋予一个自己想赋予的值，但是我总会把这个符号&amp;忘掉<br>putchar（）虽然我用的比较少，但是我知道它只能输出单个字符，但是单个字符会依次排列。<br>当然如果提到scanf就不得不提到%d、%f、%c了，%d这个占位符是代表整数，%c是代表字符，最让我吃瘪的是这个%f，之前用这个的时候题目让输出3.14，而我无论怎么输出都是3.140000，后来了解了一下发现只打%f的话是默认保留6位小数，如果我想保留两位小数我得打%2f，%nf就是保留几位小数。<br>再聊一下if以及else吧<br>if - else 讲解<br>if 翻译是如果，else 翻译是否则。我拿这道题举例<br>if(6%2 &#x3D;&#x3D;0)<br>{<br>    printf(“A”);<br>}<br>else<br>{<br>    printf(“B”);<br>｝<br>这道题问的是最后会输出什么，6%2的含义是6&#x2F;2的余数，它的余数是0，那么0&#x3D;0，if括号里的内容是成立的，他就会输出“A”。<br>这周我学的最后一个内容就是switch了，在学习了前面的内容之后在去学习其他的就比较好理解了，这道例题是输入1，输出Monday，但要求有星期一到星期日，这个时候就要用到switch了。<br>#include &lt;stdio.h&gt;<br>int main()<br>{<br>    int n;<br>    scanf(“%d”,&amp;n);<br>    switch(n)<br>    {<br>        case 1:printf(“Monday”);break;<br>        case 2:printf(“Tuesday”);break;<br>        case 3:printf(“Wednesday”);break;<br>        case 4:printf(“Thursday”);break;<br>        case 5:printf(“Friday”);break;<br>        case 6:printf(“Saturday”);break;<br>        case 7:printf(“Sunday”);break;<br>    }<br>    return 0;<br>}<br>一定不要落掉break啊，不然命令会继续执行下去的。<br>嗯大概就这些吧，加油继续学习c++</p>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        
+                            <li title="0" data-url="http://link.hhtjim.com/163/425570952.mp3"></li>
+                        
+                    
+                        
+                            <li title="1" data-url="http://link.hhtjim.com/163/425570952.mp3"></li>
+                        
+                    
+                </ul>
+            
+        </div>
+        
+        
+    <div id="gitalk-container" class="comment link"
+		data-enable="false"
+        data-ae="false"
+        data-ci=""
+        data-cs=""
+        data-r=""
+        data-o=""
+        data-a=""
+        data-d="false"
+    >查看评论</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/typed.js"></script>
+<script src="/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</html>
