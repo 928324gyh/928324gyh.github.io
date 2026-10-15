@@ -31,6 +31,9 @@
     
 <link rel="stylesheet" href="/css/diaspora.css">
 
+    
+<link rel="stylesheet" href="/css/custom.css">
+
     <script>window.searchDbPath = "/search.xml";</script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -67,7 +70,7 @@
 
         </div>
         <div class="content markdown">
-            <p>这是我的c++学习过程，由于这几天军训，留给我学习的时间很紧凑，就先说一下对于#include &lt;stdio.h&gt;的理解吧。<br>我一开始以为这就是一个固定公式化的东西，没有什么特殊含义，但是当我更深入了解c++一点以后，我发现并不是的，我就开始搜索它的含义，发现它其实就是告诉编译器把输入输出的头文件拿过来用，他的里面本来就放好了很多函数声明。<br>比如printf（）是打印后方括号内的进行输出。<br>而scanf（）是给量赋予一个自己想赋予的值，但是我总会把这个符号&amp;忘掉<br>putchar（）虽然我用的比较少，但是我知道它只能输出单个字符，但是单个字符会依次排列。<br>当然如果提到scanf就不得不提到%d、%f、%c了，%d这个占位符是代表整数，%c是代表字符，最让我吃瘪的是这个%f，之前用这个的时候题目让输出3.14，而我无论怎么输出都是3.140000，后来了解了一下发现只打%f的话是默认保留6位小数，如果我想保留两位小数我得打%2f，%nf就是保留几位小数。<br>再聊一下if以及else吧<br>if - else 讲解<br>if 翻译是如果，else 翻译是否则。我拿这道题举例<br>if(6%2 &#x3D;&#x3D;0)<br>{<br>    printf(“A”);<br>}<br>else<br>{<br>    printf(“B”);<br>｝<br>这道题问的是最后会输出什么，6%2的含义是6&#x2F;2的余数，它的余数是0，那么0&#x3D;0，if括号里的内容是成立的，他就会输出“A”。<br>这周我学的最后一个内容就是switch了，在学习了前面的内容之后在去学习其他的就比较好理解了，这道例题是输入1，输出Monday，但要求有星期一到星期日，这个时候就要用到switch了。<br>#include &lt;stdio.h&gt;<br>int main()<br>{<br>    int n;<br>    scanf(“%d”,&amp;n);<br>    switch(n)<br>    {<br>        case 1:printf(“Monday”);break;<br>        case 2:printf(“Tuesday”);break;<br>        case 3:printf(“Wednesday”);break;<br>        case 4:printf(“Thursday”);break;<br>        case 5:printf(“Friday”);break;<br>        case 6:printf(“Saturday”);break;<br>        case 7:printf(“Sunday”);break;<br>    }<br>    return 0;<br>}<br>一定不要落掉break啊，不然命令会继续执行下去的。<br>嗯大概就这些吧，加油继续学习c++</p>
+            <p>这是我的c++学习过程，由于这几天军训，留给我学习的时间很紧凑，就先说一下对于#include &lt;stdio.h&gt;的理解吧。<br>我一开始以为这就是一个固定公式化的东西，没有什么特殊含义，但是当我更深入了解c++一点以后，我发现并不是的，我就开始搜索它的含义，发现它其实就是告诉编译器把输入输出的头文件拿过来用，他的里面本来就放好了很多函数声明。<br>比如printf（）是打印后方括号内的进行输出。<br>而scanf（）是给量赋予一个自己想赋予的值，但是我总会把这个符号&amp;忘掉<br>putchar（）虽然我用的比较少，但是我知道它只能输出单个字符，但是单个字符会依次排列。<br>当然如果提到scanf就不得不提到%d、%f、%c了，%d这个占位符是代表整数，%c是代表字符，最让我吃瘪的是这个%f，之前用这个的时候题目让输出3.14，而我无论怎么输出都是3.140000，后来了解了一下发现只打%f的话是默认保留6位小数，如果我想保留两位小数我得打%2f，%nf就是保留几位小数。<br>再聊一下if以及else吧<br>if - else 讲解<br>if 翻译是如果，else 翻译是否则。我拿这道题举例<br>if(6%2 &#x3D;&#x3D;0)<br>{<br>    printf(“A”);<br>}<br>else<br>{<br>    printf(“B”);<br>}<br>这道题问的是最后会输出什么，6%2的含义是6&#x2F;2的余数，它的余数是0，那么0&#x3D;0，if括号里的内容是成立的，他就会输出“A”。<br>这周我学的最后一个内容就是switch了，在学习了前面的内容之后在去学习其他的就比较好理解了，这道例题是输入1，输出Monday，但要求有星期一到星期日，这个时候就要用到switch了。<br>#include &lt;stdio.h&gt;<br>int main()<br>{<br>    int n;<br>    scanf(“%d”,&amp;n);<br>    switch(n)<br>    {<br>        case 1:printf(“Monday”);break;<br>        case 2:printf(“Tuesday”);break;<br>        case 3:printf(“Wednesday”);break;<br>        case 4:printf(“Thursday”);break;<br>        case 5:printf(“Friday”);break;<br>        case 6:printf(“Saturday”);break;<br>        case 7:printf(“Sunday”);break;<br>    }<br>    return 0;<br>}<br>一定不要落掉break啊，不然命令会继续执行下去的。<br>嗯大概就这些吧，加油继续学习c++</p>
 
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">

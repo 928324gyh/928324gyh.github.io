@@ -1,0 +1,32 @@
+/* ===== 自定义背景色（柔和米白）===== */
+/* 修改 --bg-color 一处即可全站生效 */
+
+html, body {
+    background: #f7f5f0; /* 米白色 */
+}
+
+/* 文章主体 */
+#single {
+    background: #f7f5f0;
+}
+
+/* 文章预览面板 */
+#preview {
+    background: #f7f5f0;
+}
+
+/* 顶部导航栏（原来是 #fefefe，改成同色系） */
+#top {
+    background: #f7f5f0;
+    border-bottom: 1px solid #e8e5de;
+}
+
+/* 侧边导航（原来是白底 97% 透明） */
+.nav {
+    background: rgba(247, 245, 240, .97);
+}
+
+/* 标签背景透明度微调，避免和米白底冲突 */
+.post-tags-list-item {
+    background: rgba(102, 128, 153, 0.09);
+}
